@@ -25,19 +25,8 @@ public class MiniChallenge5Service : IMiniChallenge5Service
         return prompt;
     }
 
-    public List<string> MakeStory(string input1, string input2, string input3, string input4, string input5, string input6, string input7, string input8, string input9, string input10)
+    public List<string> MakeStory(string nameOne, string pronoun, string nounOne, string warriorsWeapon, string creatureOne, string locationOne, string nameTwo, string ageOne, string toolOne, string pocketItem)
     {
-        string nameOne = input1;
-        string pronoun = input2;
-        string nounOne = input3;
-        string warriorsWeapon = input4;
-        string creatureOne = input5;
-        string locationOne = input6;
-        string nameTwo = input7;
-        string ageOne = input8;
-        string toolOne = input9;
-        string pocketItem = input10;
-
         prompt = new();
 
         prompt.Add($"There once was a dwarf named {nameOne}. {pronoun} was on the hunt for {nounOne} inside a dragon's lair. {pronoun} only carries {warriorsWeapon} to play kicking toons for the boys at the tavern. {nameOne} crossed gueling mountain passes and treacherous rivers, only to see a hoard of {creatureOne} outside of the cave where the dragon's lair is located. {nameOne}, in a blaze of glory, bravely runs away to the nearby town of {locationOne}.");

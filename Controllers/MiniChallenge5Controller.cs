@@ -22,9 +22,9 @@ public class MiniChallenge5Controller : ControllerBase
     }
 
     [HttpPut]
-    [Route("MakeStory/{input1}/{input2}/{input3}/{input4}/{input5}/{input6}/{input7}/{input8}/{input9}/{input10}")]
-    public List<string> MakeStory(string input1, string input2, string input3, string input4, string input5, string input6, string input7, string input8, string input9, string input10)
+    [Route("MakeStory/{nameOne}/{pronoun}/{nounOne}/{warriorsWeapon}/{creatureOne}/{locationOne}/{nameTwo}/{ageOne}/{toolOne}/{pocketItem}")]
+    public List<string> MakeStory(string nameOne, string pronoun, string nounOne, string warriorsWeapon, string creatureOne, string locationOne, string nameTwo, string ageOne, string toolOne, string pocketItem)
     {
-        return _miniChallenge5Service.MakeStory(input1, input2, input3, input4, input5, input6, input7, input8, input9, input10);
+        return _miniChallenge5Service.MakeStory(nameOne, pronoun, nounOne, warriorsWeapon, creatureOne, locationOne, nameTwo, ageOne, toolOne, pocketItem);
     }
 }
